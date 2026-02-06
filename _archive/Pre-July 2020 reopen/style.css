@@ -1,0 +1,521 @@
+@import url("fonts/Nunito.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("img/background.jpg");
+  background-repeat: repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  color: #292929;
+  font-family: "Nunito", "Helvetica", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+img {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+img[data-src] {
+	opacity: 0;
+}
+
+
+.top {
+  width:  50px;
+  z-index: 5000;
+  bottom: 10px;
+  right: 10px;
+  position: fixed;
+  border: 1px solid #292929;
+  display: block;
+  color: #000;
+  text-align:center;
+  padding: 10px 0 10px 0;
+
+}
+
+.top a {
+  text-decoration: none;
+  padding: 20px 0 0 0;
+}
+
+
+a {
+  font-style: normal;
+  font-weight: 300;
+  text-decoration: none;
+  color: #292929;
+}
+
+a:hover {
+  text-decoration: none;
+  color: green;
+}
+
+.logo {
+  width: 100%;
+  mix-blend-mode: multiply;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.logo img {
+  mix-blend-mode: multiply;
+  width: 300px;
+}
+
+.logo p {
+  font-style: normal;
+  font-size: 13pt;
+  line-height: 1.4;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 0 48pt 0 48pt;
+}
+
+.nav {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 8pt;
+  width: 100%;
+  margin: 0 auto 0;
+  padding: 10px 0 10px 0;
+  position: fixed;
+  z-index: 2000;
+  background-color: #292929;
+}
+
+.nav li {
+  list-style: none;
+  display: inline;
+  font-size: 8pt;
+  padding: 0 10px 0 10px;
+}
+
+.nav li a {
+  color: #fbf3e8;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.nav li a:hover {
+  color: green;
+}
+
+.social-media {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media ul {
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+.social-media li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+
+.social-media img {
+  width: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+strong {
+  font-style: normal;
+  font-weight: 700;
+}
+
+section {
+  width: 100%;
+  border-top: 8px solid #292929;
+  padding-bottom: 0px;
+  opacity: 1;
+}
+
+.clip {
+  padding: 0 40px 0 40px;
+  margin: 20px 0 0 0;
+}
+
+.clip img {
+  padding: 0;
+  margin: 0 0 -6px 0;
+  max-width: 100%;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20pt;
+  text-transform: uppercase;
+  padding-top: 0;
+  margin: 0 0 14px 0;
+}
+
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11pt;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+h2:first-child {
+  padding-top: 8pt;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 10pt;
+  line-height: 14pt;
+  padding: 3px 0 0 0;
+  margin: 0;
+}
+
+ul span.name {
+  font-weight: 700;
+}
+
+ul {
+  font-style: normal;
+  font-weight: 300;
+  list-style: none;
+  font-size: 11pt;
+  line-height: 14pt;
+  margin: 0;
+  padding: 0 0 30px 0;
+}
+
+ul li {
+  font-style: normal;
+  font-weight: 300;
+  list-style: none;
+  font-size: 10pt;
+  line-height: 14pt;
+  margin: 0;
+  padding: 6px 0 0 0;
+}
+
+ul span.price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9pt;
+}
+
+ul span.cocktail-prep {
+  font-style: italic;
+}
+
+.job {
+  padding: 30px;
+}
+
+.menu {
+  padding: 30px 40px 20px 40px;
+}
+
+.info {
+  padding-top: 30px;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 9pt;
+  text-transform: uppercase;
+  padding: 0;
+  letter-spacing: 1px;
+  margin: 12px 0 0 0;
+}
+
+.la {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20pt;
+  padding: 24px 0 0 0;
+  margin: 0;
+}
+
+.menu h1 {
+  margin: 0;
+}
+
+a:hover img {
+  opacity: 0.7;
+}
+
+address {
+  font-size: 14pt;
+  line-height: 20pt;
+  font-style: normal;
+  padding: 0 20px 20px;
+}
+
+address .name {
+  font-size: 18pt;
+  text-transform: uppercase;
+}
+
+address p.directions {
+  font-size: 12pt;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+address p.directions a {
+  font-weight: 700;
+}
+
+.hours {
+  margin: 0 auto;
+  border: 1px solid #292929;
+  padding: 20px 20px 10px 20px;
+  width: 240px;
+}
+
+.hours h1 {
+  line-height: 36pt;
+}
+
+.contact {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+
+@media only screen and (min-width:420px) {
+
+.nav {
+  font-style: normal;
+  width: 100%;
+  margin: -10px auto 0;
+  padding: 10px 0 10px 0;
+  position: fixed;
+  z-index: 2000;
+  background-color: #292929;
+}
+
+.nav li {
+  list-style: none;
+  display: inline;
+  font-size: 10pt;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav li a {
+  color: #fbf3e8;
+}
+
+.nav li a:hover {
+  color: green;
+}
+
+.menu {
+  padding-top: 70px;
+}
+
+.info {
+  padding-top: 70px;
+}
+
+ul {
+  font-style: normal;
+  font-weight: 300;
+  list-style: none;
+  font-size: 13pt;
+  line-height: 16pt;
+  margin: 0;
+  padding: 0 0 30px 0;
+}
+
+ul li {
+  font-style: normal;
+  font-weight: 300;
+  list-style: none;
+  font-size: 12pt;
+  line-height: 16pt;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+ul span.name {
+  font-weight: 700;
+}
+
+ul span.price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+ul span.cocktail-prep {
+  font-style: italic;
+}
+
+.job {
+  padding: 30px;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20pt;
+  text-transform: uppercase;
+  padding-top: 0;
+  margin: 0 0 15px 0;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13pt;
+  line-height: 16pt;
+  text-transform: uppercase;
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+h2:first-child {
+  padding-top: 8px;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12pt;
+  line-height: 16pt;
+  padding: 2px 0 0 0;
+  margin: 0;
+}
+
+.la {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20pt;
+  padding: 24px 0 0 0;
+  margin: 0;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 9pt;
+  text-transform: uppercase;
+  padding: 0;
+  letter-spacing: 1px;
+  margin: 12px 0 0 0;
+}
+
+.nav {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 8pt;
+  width: 100%;
+  margin: -10px auto 0;
+  padding: 30px 0 30px 0;
+  position: fixed;
+  z-index: 2000;
+  background-color: #292929;
+}
+
+.nav li {
+  list-style: none;
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+
+.nav li a {
+  color: #fbf3e8;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+a:hover img {
+  opacity: 0.7;
+}
+
+address {
+  font-size: 14pt;
+  line-height: 20pt;
+  font-style: normal;
+  padding: 0 20px 20px;
+}
+
+address .name {
+  font-size: 18pt;
+  text-transform: uppercase;
+}
+
+address p.directions {
+  font-size: 12pt;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+address p.directions a {
+  font-weight: 700;
+}
+
+.hours {
+  margin: 0 auto;
+  border: 1px solid #292929;
+  padding: 20px 20px 10px 20px;
+  width: 300px;
+}
+
+.hours h1 {
+  line-height: 36pt;
+}
+
+.contact {
+  margin: 0 auto;
+  padding: 20px;
+  width: 450px;
+}
+
+.social-media {
+  width: 100%;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.social-media ul {
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+.social-media li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+
+.social-media img {
+  width: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+}

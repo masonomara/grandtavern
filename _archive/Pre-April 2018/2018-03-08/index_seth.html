@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Grand Tavern</title>
+		<link rel="shortcut icon" href="http://thegrandtavern.com/img/favicon.ico" type="image/x-icon" />
+		<meta name="google-site-verification" content="UVDZLtiUXzq72ZhNI5Cd4Ceb_wDBz-gPeyw86mLFZJs" />
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6026112/7375552/css/fonts.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+		
+			<script>
+		jQuery(document).ready(function() {
+			var duration = 1000;
+			jQuery(window).scroll(function() {
+				if (jQuery(this).scrollTop()) {
+					jQuery('.top').fadeIn(duration);
+				} else {
+					jQuery('.top').fadeOut(duration);
+				}
+			});
+
+			jQuery('.top').click(function(event) {
+				event.preventDefault();
+				jQuery('html, body').animate({
+					scrollTop: 0
+				}, duration);
+				return false;
+			})
+		});
+	</script>
+	</head>
+	<body id="home">
+		<header>
+			<ul class="nav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#food">Food</a></li>
+				<li><a href="#drinks">Drinks</a></li>
+				<li><a href="#brunch">Brunch</a></li>
+				<li><a href="#jobs">Jobs</a></li>
+				<li><a href="#info">Info</a></li>
+			</ul>
+		</header>
+		<section>
+			<div class="logo"><a href="http://thegrandtavern.com"><img src="img/logo01.png" /></a>
+			</div>
+			<div class="gt-clip"><img data-src="img/grand_clip1b.jpg" /></div>
+		</section>
+		<section id="food">
+			<div class="gt">
+				<h1>Small Plates</h1>
+				<ul class="gt-item">
+					<li class="gt-name"><strong>fresh mozzarella (made to order)</strong> … <strong> 14</strong></li>
+					<li>Calabrian chile pesto, black pepper, extra virgin olive oil, grilled bread</li>
+					<li class="gt-name"><strong>house ricotta</strong> … <strong> 10</strong></li>
+					<li>fungi sott’olio, grilled bread</li>
+					<li class="gt-name"><strong>Bibb lettuce salad</strong> … <strong> 12</strong></li>
+					<li>house vinaigrette, smokey bleu cheese, toasted hazelnuts</li>
+					<!--<li class="gt-name"><strong>whole fried poussin</strong> … <strong> 18</strong></li>
+					<li>local honey, cayenne pepper, lemon</li>-->
+					<li class="gt-name"><strong>grilled octopus</strong> … <strong> 16</strong></li>
+					<li>stewed flageolet beans, ’Nduja</li>
+					<li class="gt-name"><strong>house ricotta cavatelli</strong> … <strong> 14</strong></li>
+					<li>lamb sausage, heirloom tomatoes, ricotta salata</li>
+					<li class="gt-name"><strong>house agnolotti</strong> … <strong> 16</strong></li>
+					<li>lobster, bacon, sauce Américaine, tarragon</li>
+					<li class="gt-name"><strong>house charcuterie</strong> … <strong> 8</strong>/each … <strong> 24</strong>/all three</li>
+					<li>pork pastrami terrine, chicken liver pate, rabbit mortadella with olives</li>
+				</ul>
+				<h1>Entrees</h1>
+				<ul class="gt-item">
+					<li class="gt-name"><strong>burger</strong> … <strong> 15</strong></li>
+					<li>double patty, sesame brioche, Comté mornay, pickles, sauce, fries</li>
+					<li class="gt-name"><strong>summer squash curry</strong> … <strong> 16</strong></li>
+					<li>beluga lentils, coconut, toasted pine nuts, cilantro</li>
+					<li class="gt-name"><strong>half chicken</strong> … <strong> 26</strong></li>
+					<li>broccoli rabe, yogurt, chermoula</li>
+					<li class="gt-name"><strong>veal schnitzel</strong> … <strong> 25</strong></li>
+					<li>escarole salad, shallot vinaigrette</li>
+					<li class="gt-name"><strong>skirt steak</strong> … <strong> 30</strong></li>
+					<li>roasted bone marrow, fingerlings, salsa rosa, parsley</li>
+					<li class="gt-name"><strong>local scallops</strong> … <strong> 28</strong></li>
+					<li>sweet corn, squash, chile, bacon, lemon balm</li>
+					<li class="gt-name"><strong>local tilefish</strong> … <strong> 26</strong></li>
+					<li>chorizo crust, spinach purée, mushrooms</li>
+				</ul>
+				<h1>For Two</h1>
+				<ul class="gt-item">
+					<li class="gt-name"><strong>36 oz dry aged côte du beouf</strong> … <strong> 100</strong></li>
+					<li>fries, asparagus with Caesar hollandaise and parmigiano</li>
+				</ul>
+				<h1>Dessert</h1>
+				<ul class="gt-item">
+					<li class="gt-name"><strong>pancake</strong> … <strong> 10</strong></li>
+					<li>vanilla butter, fresh berries, maple syrup</li>
+				</ul>
+			</div>
+			<div class="gt-clip"><img data-src="img/grand_clip2.png" /></div>
+		</section>
+		<section class="red" id="drinks">
+			<div class="gt">
+				<h1>Wine</h1>
+				<ul class="gt-item">
+					SPARKLING & CHAMPAGNE
+					<li class="gt-name"><strong>Champagne</strong> … <strong> 47</strong></li>
+					<li>half bottle, 1er Cru, Forget Brimont, France NV</li>
+					<li class="gt-name"><strong>Prosecco</strong> … <strong> 9</strong></li>
+					<li>Canti 187ml, Italy NV</li>
+					<li class="gt-name"><strong>Brut</strong> … <strong> 12</strong></li>
+					<li>Domaine Laurier 187ml California NV</li>
+					<li class="gt-name"><strong>Prosecco</strong> … <strong> 40</strong></li>
+					<li>Conti Di San Bonifacio Italy NV</li>
+					<li class="gt-name"><strong>Blanc de Blancs</strong> … <strong> 10/45</strong></li>
+					<li>De Perrier Brut, France NV</li>
+					<li class="gt-name"><strong>Cremant D’Alsace</strong> … <strong> 58</strong></li>
+					<li>Zinck Brut Rose, France NV</li>
+					<li class="gt-name"><strong>Champagne … 95</strong></li>
+					<li>1er Cru Forget Brimont, France NV</li>
+				</ul>
+				<ul class="gt-item">
+					ROSÉ
+					<li class="gt-name"><strong>Negrette</strong> … <strong> 10/40</strong></li>
+					<li>Lionel Osmin Toulouse, France 2015</li>
+					<li class="gt-name"><strong>Grenache</strong> … <strong> 12/48</strong></li>
+					<li>Saint Mitre Provence, France 2015</li>
+					<li class="gt-name"><strong>Mencia</strong> … <strong> 48</strong></li>
+					<li>Godelia, Spain 2015</li>
+				</ul>
+				<ul class="gt-item">
+					WHITE
+					<li class="gt-name"><strong>Vinho Verde</strong> … <strong> 8/32</strong></li>
+					<li>Escudo Real Minho, Portugal NV</li>
+					<li class="gt-name"><strong>Pinot Grigio</strong> … <strong> 9/36</strong></li>
+					<li>Cielo Veneto, Italy 2015</li>
+					<li class="gt-name"><strong>Falanghina</strong> … <strong> 10/40</strong></li>
+					<li>Rocca Del Dragone, Campania, Italy</li>
+					<li class="gt-name"><strong>Pinot Gris</strong> … <strong> 48</strong></li>
+					<li>Iris Eugene, Oregon 2014</li>
+					<li class="gt-name"><strong>Gruner Veltliner</strong> … <strong> 48</strong></li>
+					<li>Zocker Edna Valley, California 2014</li>
+					<li class="gt-name"><strong>Bordeaux Blanc</strong> … <strong> 9/36</strong></li>
+					<li>Chateau Pilet (Semillon, Sauv Blanc), France 2014</li>
+					<li class="gt-name"><strong>Sauvignon Blanc</strong> … <strong> 10/40</strong></li>
+					<li>Shepherd Napa, Ca 2014</li>
+					<li class="gt-name"><strong>Sancerre</strong> … <strong> 12/48</strong></li>
+					<li>Jean Marc Crochet (Sauv Blanc) Loire, France 2015</li>
+					<li class="gt-name"><strong>Burgundy</strong> … <strong> 10/40</strong></li>
+					<li>Mommessin Le Clé Saint-Pierre (Chard), France 2014</li>
+					<li class="gt-name"><strong>Burgundy</strong> … <strong> 56</strong></li>
+					<li>Dom Manuel Olivier Côte de Nuits, (Chard) France 2013</li>
+					<li class="gt-name"><strong>Chablis</strong> … <strong> 64</strong></li>
+					<li>J. Moreau & Fils Burgundy, (Chard) 2014</li>
+					<li class="gt-name"><strong>Chardonnay</strong> … <strong> 10/40</strong></li>
+					<li>Southern Slope Columbia Valley, Washington 2013</li>
+					<li class="gt-name"><strong>Chardonnay</strong> … <strong> 14/56</strong></li>
+					<li>Frank Family Napa Valley, California 2013</li>
+					<li class="gt-name"><strong>Riesling</strong> … <strong> 10/40</strong></li>
+					<li>St Urban Hof QbA, Mosel, Germany 2014</li>
+				</ul>
+				<ul class="gt-item">
+					RED
+					<li class="gt-name"><strong>Burgundy</strong> … <strong> 10/40</strong></li>
+					<li>Dom Manuel Olivier (Pinot Noir) France 2014</li>
+					<li class="gt-name"><strong>Pinot Noir</strong> … <strong> 14/56</strong></li>
+					<li>Iilahe Willamette Valley, Oregon 2014</li>
+					<li class="gt-name"><strong>Pinot Noir</strong> … <strong> 65</strong></li>
+					<li>Truchard Napa Valley, California 2013</li>
+					<li class="gt-name"><strong>Bordeaux</strong> … <strong> 9/36</strong></li>
+					<li>Ac Château Blouin (Merlot, Cab Franc) 2013</li>
+					<li class="gt-name"><strong>Haut-Medoc</strong> … <strong> 12/48</strong></li>
+					<li>Château Tourteran (Cab, Merlot & Petite Verdot) 2010</li>
+					<li class="gt-name"><strong>St. Emilion</strong> … <strong> 15/60</strong></li>
+					<li>Guilhemanson Grand Cru (Merlot, Cab Franc, Cab Sav) 2012</li>
+					<li class="gt-name"><strong>Pomerol</strong> … <strong> 68</strong></li>
+					<li>Rocher Bonregard (Merlot, Cab Franc) 2012</li>
+					<li class="gt-name"><strong>Cabernet</strong> … <strong> 10/40</strong></li>
+					<!--<li>Peirano Estate Lodi, California 2013</li>
+					<li class="gt-name"><strong>Cabernet</strong> … <strong> 74</strong></li>-->
+					<li>Peirano Estate Lodi, California 2013</li>
+					<li class="gt-name"><strong>Cabernet</strong> … <strong> 90</strong></li>
+					<li>Frank Family Napa Valley, California 2012</li>
+					<li class="gt-name"><strong>Cabernet</strong> … <strong> 115</strong></li>
+					<li>Neal Family Napa Valley, California 2011</li>
+					<li class="gt-name"><strong>Bonarda</strong> … <strong> 10/40</strong></li>
+					<li>Haarth “Organic” Mendoza, Argentina 2013</li>
+					<li class="gt-name"><strong>Rioja</strong> … <strong> 10/40</strong></li>
+					<li>Cune “Crianza” Tinto (Tempranillo, Grenache) 2012</li>
+					<li class="gt-name"><strong>Cotes Du Rhône</strong> … <strong> 11/44</strong></li>
+					<li>Galevan Paroles Du Femmes (Grenache, Mourvedre) 2012</li>
+					<li class="gt-name"><strong>Malbec</strong> … <strong> 48</strong></li>
+					<li>Domaine Theron Cahors, France 2011</li>
+					<li class="gt-name"><strong>Barolo</strong> … <strong> 54</strong></li>
+					<li>Cantine Povero Piedmont, Italy 2011</li>
+					<li class="gt-name"><strong>Mencia</strong> … <strong> 56</strong></li>
+					<li>Godelia Bierzo, Spain 2010</li>
+					<li class="gt-name"><strong>Languedoc-Roussillon</strong> … <strong> 62</strong></li>
+					<li>Bila Haut Occultum Lapidem (Syrah, Grenache) 2013</li>
+					<li class="gt-name"><strong>Chateauneuf-du-Pape</strong> … <strong> 80</strong></li>
+					<li>Dom Des Chanssaud 2012</li>
+					<li class="gt-name"><strong>Brunello</strong> … <strong> 108</strong></li>
+					<li>Poggio Salvi Montalcino, Tuscany 2010</li>
+				</ul>
+				<h1>Cocktails</h1>
+				<ul class="gt-item">
+					<li class="gt-name"><strong>Smoke & Roses</strong> … <strong> 10</strong></li>
+					<li>mezcal, elderflower liqueur, lime, simple syrup, rose water</li>
+					<li class="gt-name"><strong>Don Fecundo</strong> … <strong> 10</strong></li>
+					<li>white rum, lemon, simple syrup, house grenadine, mint</li>
+					<li class="gt-name"><strong>The Grand Fashioned</strong> … <strong> 10</strong></li>
+					<li>rye, Demerara sugar, Angostura bitters, orange bitters, orange, brandied cherries</li>
+					<li class="gt-name"><strong>Thriller</strong> … <strong> 10</strong></li>
+					<li>gin, Cointreau, Lillet Blanc, lemon, absinthe</li>
+					<li class="gt-name"><strong>Champs-Élysées</strong> … <strong> 10</strong></li>
+					<li>cognac, green Chartreuse, lemon, simple syrup, Angostura bitters</li>
+					<li class="gt-name"><strong>Pink Lady</strong> … <strong> 10</strong></li>
+					<li>vodka, Cointreau, Chambord, lemon</li>
+					<li class="gt-name"><strong>South Side</strong> … <strong> 10</strong></li>
+					<li>gin, lime, simple syrup, mint, Angostura bitters</li>
+					<li class="gt-name"><strong>The Old L.A.</strong> … <strong> 10</strong></li>
+					<li>bourbon, grapefruit, honey syrup, lemon, brandied cherries</li>
+					<li class="gt-name"><strong>The Dove</strong> … <strong> 10</strong></li>
+					<li>blanco tequila, grapefruit, lime, club soda, smoked salt rim</li>
+					<li class="gt-name"><strong>Honey Suckle</strong> … <strong> 10</strong></li>
+					<li>aged rum, lime Juice, honey syrup, brandied cherries</li>
+					<li class="gt-name"><strong>Blushing Elderflower</strong> … <strong> 10</strong>
+						<li>elderflower liqueur, gin, sparkling rosé, club soda, grapefruit, brandied cherries</li>
+					</li>
+				</ul>
+				<h1>Beer</h1>
+				<ul class="gt-item">TAP
+					<li class="gt-name"><strong>Light</strong> … <strong> 5</strong></li>
+					<li><strong>Dark</strong> … <strong> 5</strong></li>
+					<em>seasonal rotating selection – please inquire</em>
+				</ul>
+				<ul class="gt-item">BOTTLE
+					<li class="gt-name"><strong>Bud</strong> … <strong> 4</strong></li>
+					<li><strong>Miller Lite</strong> … <strong> 4</strong></li>
+					<li><strong>Miller High Life</strong> … <strong> 4</strong></li>
+					<li><strong>Stella Artois</strong> … <strong> 5</strong></li>
+					<li><strong>Modelo Especial</strong> … <strong> 6</strong></li>
+					<li><strong>Forgotten Boardwalk What the Butler Saw 5%</strong> … <strong> 6</strong></li>
+					<li><strong>Flying Fish Daylight Savings 4.9%</strong> … <strong> 6</strong></li>
+					<li><strong>Bad Ass Cider 5.5%</strong> … <strong> 6</strong></li>
+					<li><strong>Victory Prima Pils 5.3%</strong> … <strong> 5</strong></li>
+					<li><strong>Pinkus Organic Ur-Pils 5.2%</strong> … <strong> 8</strong></li>
+					<li><strong>Unibroue Blanche de Chambly Witbeir 5%</strong> … <strong> 5</strong></li>
+					<li><strong>Ayinger Brau Weisse 5.1%</strong> … <strong> 8</strong></li>
+					<li><strong>Unibroue Emphere Apple 5.5%</strong> … <strong> 8</strong></li>
+					<li><strong>Goose Island Sofie Saison 6.5%</strong> … <strong> 8</strong></li>
+					<li><strong>Firestone Easy Jack IPA 4.5%</strong> … <strong> 5</strong></li>
+					<li><strong>Uinta Hop Nosh IPA 7.3%</strong> … <strong> 6</strong></li>
+					<li><strong>Blue Point Toasted Lager 5.3%</strong> … <strong> 5</strong></li>
+				</ul>
+			</div>
+			<div class="gt-clip"><img data-src="img/grand_clip3.png" /></div>
+		</section>
+		<section class="red" id="brunch">
+			<div class="gt">
+				<h1>Brunch</h1>
+				<ul class="gt-item">
+					<li class="gt-name"><strong>crab cake benedict</strong> … <strong> 16</strong></li>
+					<li>Caesar hollandaise</li>
+					<li class="gt-name"><strong>eggs benedict</strong> … <strong> 11</strong></li>
+					<li>ham, hollandaise, English muffin</li>
+					<li class="gt-name"><strong>grilled skirt steak</strong> … <strong> 18</strong></li>
+					<li>fried egg, potatoes, salsa verde</li>
+					<li class="gt-name"><strong>pancakes</strong> … <strong> 10</strong></li>
+					<li>fresh fruit, vanilla butter, maple syrup</li>
+					<li class="gt-name"><strong>fried chicken</strong> … <strong> 16</strong></li>
+					<li>biscuit, bacon, maple syrup</li>
+					<li class="gt-name"><strong>french toast</strong> … <strong> 10</strong></li>
+					<li>cinnamon sugar, maple syrup, mascarpone</li>
+				</ul>
+				<ul class="gt-item">
+					Cocktails
+					<li class="gt-name"><strong>Mimosa</strong> … <strong> 5</strong></li>
+					<li>brut champagne, orange juice</li>
+					<li class="gt-name"><strong>Aperol Spritz</strong> … <strong> 7</strong></li>
+					<li>aperol, dry champagne, orange bitters</li>
+					<li class="gt-name"><strong>French 75</strong> … <strong> 8</strong></li>
+					<li>gin, lemon juice, dry champagne, simple syrup</li>
+					<li class="gt-name"><strong>Bloody Mary</strong> … <strong> 6</strong></li>
+					<li>vodka, house bloody mix, celery stick, lemon, olive</li>
+					<li class="gt-name"><strong>Harvey Wallbanger</strong> … <strong> 8</strong></li>
+					<li>vodka, orange juice, Galliano float</li>
+				</ul>
+			</div>
+			<div class="gt-clip"><img data-src="img/grand_clip4.png" /></div>
+		</section>
+		<section id="jobs">
+			<div class="gt">
+				<h1>We are</h1>
+				<h1>looking</h1>
+				<h1>for some</h1>
+				<h1>grand</h1>
+				<h1>people.</h1>
+				<ul class="gt-la">
+					<li>front/back of house</li>
+					<li>full/part-time.</li>
+				</ul>
+				<ul class="gt-loc">
+					<li>Send your resume to</li>
+					<li><a href="mailto:info@thegrandtavern.com">info@thegrandtavern.com</a></li>
+					<li>for consideration</li>
+				</ul>
+			</div>
+			<div class="gt-clip"><img data-src="img/grand_clip5.png" /></div>
+		</section>
+		<section id="info">
+			<div class="gt">
+				<h1>Grand Tavern</h1>
+				<h2>1105 6th Avenue</h2>
+				<h2>Neptune, NJ 07753</h2>
+				<h4><a href="https://www.google.com/maps/dir/''/1105+6th+Ave,+Neptune+City,+NJ+07753/@40.2034411,-74.0224036,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89c227d2dcc84a35:0xee61c6283e7985dc!2m2!1d-74.0202149!2d40.2034411">
+						Directions</a></h4>
+				<div class="gt-hrs">
+					<h4>Hours</h4>
+					<ul class="gt-loc">
+						<li><strong>Mon–Sat:</strong> 5PM–12AM</li>
+						<li>Kitchen closes at 10PM</li>
+					</ul>
+					<ul class="gt-loc">
+						<li><strong>Sunday Brunch</strong> 11AM–4PM</li>
+						<li><strong>Sunday Dinner</strong> 5PM–10PM</li>
+						<li>Kitchen closes at 9PM</li>						
+					</ul>
+				</div>
+				<ul class="gt-loc">
+					<li>(732) 774-0120</li>
+					<li><a href="mailto:info@thegrandtavern.com">info@thegrandtavern.com</a></li>
+				</ul>
+				<div class="gt-sm-box">
+					<ul class="gt-sm">
+						<li><a href="https://www.facebook.com/thegrandtavern1105/?fref=ts"><img src="img/gt-fb.png" /></a></li>
+						<li><a href="https://www.instagram.com/thegrandtavern/"><img src="img/gt-i.png" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<div class="top"><a href="#">&uarr;</a></div>
+
+		
+		<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+<script>
+[].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+	img.setAttribute('src', img.getAttribute('data-src'));
+	img.onload = function() {
+		img.removeAttribute('data-src');
+	};
+});
+</script>
+
+
+	</body>
+</html>

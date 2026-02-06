@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Grand Tavern</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<meta name="google-site-verification" content="UVDZLtiUXzq72ZhNI5Cd4Ceb_wDBz-gPeyw86mLFZJs" />
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+
+			<script>
+		jQuery(document).ready(function() {
+			var duration = 1000;
+			jQuery(window).scroll(function() {
+				if (jQuery(this).scrollTop()) {
+					jQuery('.top').fadeIn(duration);
+				} else {
+					jQuery('.top').fadeOut(duration);
+				}
+			});
+
+			jQuery('.top').click(function(event) {
+				event.preventDefault();
+				jQuery('html, body').animate({
+					scrollTop: 0
+				}, duration);
+				return false;
+			})
+		});
+	</script>
+	</head>
+	<body id="home">
+		<header>
+			<ul class="nav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#food">Food</a></li>
+				<li><a href="#drinks">Drinks</a></li>
+				<li><a href="#info">Info</a></li>
+			</ul>
+		</header>
+		<section>
+			<div class="logo"><a href="http://thegrandtavern.com"><img src="img/logo.png" /></a>
+			</div>
+			<div class="clip"><img data-src="img/clip1.png" /></div>
+		</section>
+		<section id="food">
+			<div class="menu">
+				<h1>Small Plates</h1>
+				<ul>
+					<li><span class="name">baby gem lettuce salad</span>, red wine vinaigrette, crushed hazelnuts, bleu cheese&nbsp;&nbsp;<span class="price">12</span></li>
+					<li><span class="name">mozzarella</span>, asparagus pesto, grilled bread&nbsp;&nbsp;<span class="price">16</span></li>
+					<li><span class="name">p.e.i. mussels</span>, sauce américaine, cream, tarragon, bread&nbsp;&nbsp;<span class="price">18</span></li>
+					<li><span class="name">ricotta</span>, bottarga di muggine, extra virgin olive oil, bread&nbsp;&nbsp;<span class="price">16</span></li>
+					<li><span class="name">carbonara agnolotti</span>, ricotta, guanciale, peas, egg, black pepper&nbsp;&nbsp;<span class="price">16</span></li>
+					<li><span class="name">cavatelli</span>, basil pesto, cherry tomatoes, toasted walnuts, parmigiano&nbsp;&nbsp;<span class="price">18</span></li>
+					<li><span class="name">chicken nuggets</span>, bbq sauce&nbsp;&nbsp;<span class="price">14</span></li>
+				</ul>
+				<h1>Entrées</h1>
+				<ul>
+					<li><span class="name">burger</span>, sesame brioche, cheddar sauce, dijonnaise, red onion, pickles, fries&nbsp;&nbsp;<span class="price">16</span></li>
+					<li><span class="name">half chicken</span>, chimichurri, fries&nbsp;&nbsp;<span class="price">28</span></li>
+					<li><span class="name">salmon</span>, extra virgin olive oil hollandaise, spring vegetables, baby potatoes&nbsp;&nbsp;<span class="price">30</span></li>
+					<li><span class="name">pork chop</span>, ’nduja, grilled spring onions, fingerling potatoes&nbsp;&nbsp;<span class="price">34</span></li>
+					<li><span class="name">scallops</span>, cauliflower purée, roasted cauliflower, peas, salsa verde&nbsp;&nbsp;<span class="price">34</span></li>
+					<li><span class="name">dry-aged sirloin steak</span>, caramelized onions, sherry, fried baby yukons&nbsp;&nbsp;<span class="price">34</span></li>
+					<li><span class="name">tilefish</span>, pomme purée, stewed cherry tomatoes, basil&nbsp;&nbsp;<span class="price">32</span></li>
+				</ul>
+				<h1>Dessert</h1>
+				<ul>
+					<li><span class="name">tiramisu panna cotta</span>, mascarpone, chocolate shortbread, espresso&nbsp;&nbsp;<span class="price">12</span></li>
+				</ul>
+			</div>
+			<div class="clip"><img data-src="img/clip2.png" /></div>
+		</section>
+		<section id="drinks">
+			<div class="menu">
+				<h1>Cocktails / Classics</h1>
+				<ul>
+					<li><span class="name">The G&T</span><br>gin, Lillet Rosé, pêche de vigne, Fever Tree tonic&nbsp;&nbsp;<span class="cocktail-prep">shaken</span></li>
+					<li><span class="name">Connecting Flight</span><br>mezcal, lemon, Yellow Chartreuse, strawberry-infused Lillet Blanc&nbsp;&nbsp;<span class="cocktail-prep">shaken</span></li>
+					<li><span class="name">Dove 3.0</span><br>pineapple-infused vodka, crème de cassis, lime, soda&nbsp;&nbsp;<span class="cocktail-prep">shaken</span></li>
+					<li><span class="name">4th Star</span><br>white rum, grapefruit, coconut syrup, mint&nbsp;&nbsp;<span class="cocktail-prep">shaken</span></li>
+					<li><span class="name">Hey Johnny</span><br>calvados, Campari, Carpano Antica, orange&nbsp;&nbsp;<span class="cocktail-prep">stirred</span></li>
+					<li><span class="name">Lavender Lady</span><br>vodka, dolin dry, crème de violette, lavender&nbsp;&nbsp;<span class="cocktail-prep">stirred</span></li>
+					<li><span class="name">Curse of Bobby Layne</span><br>blanco tequila, maraschino, dolin blanc, grapefruit bitters&nbsp;&nbsp;<span class="cocktail-prep">stirred</span></li>
+					<li><span class="name">Moondance</span><br>bourbon, Cocchi Americano, Green Chartreuse, orange bitters&nbsp;&nbsp;<span class="cocktail-prep">stirred</span></li>
+					<li><span class="name">Jungle Bird</span><br>reserve rum, Campari, simple, pineapple, lime&nbsp;&nbsp;<span class="cocktail-prep">shaken</span></li>
+					<li><span class="name">Greenpoint</span><br>rye, Yellow Chartreuse, Carpano Antica, bitters&nbsp;&nbsp;<span class="cocktail-prep">stirred</span></li>
+					<li><span class="name">Florodora</span><br>gin, strawberry, lime, ginger beer&nbsp;&nbsp;<span class="cocktail-prep">shaken</span></li>
+					<li><span class="name">Corpse Reviver No. 1</span><br>cognac, calvados, Carpano Antica&nbsp;&nbsp;<span class="cocktail-prep">stirred</span></li>
+					<li><span class="price">13</span></li>
+				</li>
+				</ul>
+				<h1>Beer</h1>
+				<ul>
+					<h2>Draft</h2>
+					<h3>Rotating selection</h3>
+					<li>Light&nbsp;&nbsp;<span class="price">6</span></li>
+					<li>Dark&nbsp;&nbsp;<span class="price">6</span></li>
+					<h2>Bottle</h2>
+					<li>Bud&nbsp;&nbsp;<span class="price">4</span></li>
+					<li>Miller Lite&nbsp;&nbsp;<span class="price">4</span></li>
+					<li>Peroni&nbsp;&nbsp;<span class="price">6</span></li>
+					<li>Pacífico&nbsp;&nbsp;<span class="price">6</span></li>
+					<li>Reissdorf Kölsch&nbsp;&nbsp;<span class="price">6</span></li>
+					<li>Zero Gravity Brewery <em>(rotating selection)</em>&nbsp;&nbsp;<span class="price">6</span></li>
+					<li>Allagash Saison&nbsp;&nbsp;<span class="price">7</span></li>
+					<li>Asbury Park Sea Dragon IPA&nbsp;&nbsp;<span class="price">6</span></li>
+					<li>Unified Press Citizen Cider <em>(16 oz)</em>&nbsp;&nbsp;<span class="price">7</span></li>
+				</ul>
+			</div>
+			<div class="clip"><img data-src="img/clip3.png" /></div>
+		</section>
+		<section>
+			<div class="menu">
+				<h1>Wine</h1>
+				<ul>
+					<h2>Sparkling</h2>
+					<li><span class="name">Prosecco</span> di Treviso Extra Dry, Conti di San Bonifacio, Veneto, Italy NV&nbsp;&nbsp;<span class="price">12/46</span></li>
+					<li><span class="name">Blanc de Blancs</span> Brut, De Perrière, Burgundy, France NV&nbsp;&nbsp;<span class="price">10/38</span></li>
+					<li><span class="name">Lambrusco</span> Secco, Chiarli “Vecchia Modena”, Emilia-Romagna, Italy 2018&nbsp;&nbsp;<span class="price">42</span></li>
+					<li><span class="name">Chardonnay</span> Brut, Zensa Organic, Emilia-Romagna, Italy NV&nbsp;&nbsp;<span class="price">46</span></li>
+					<li><span class="name">Champagne</span> Brut, Laurent-Perrier “La Cuvée”, France NV&nbsp;&nbsp;<span class="price">92</span></li>
+					<h2>White & Rosé</h2>
+					<li><span class="name">Languedoc Rosé</span> Fontsainte “Gris de Gris” France 2018&nbsp;&nbsp;<span class="price">12/46</span></li>
+					<li><span class="name">Corsica Rosé</span> Petroni, France 2018&nbsp;&nbsp;<span class="price">11/42</span></li>
+					<li><span class="name">Pinot Grigio</span> I Castelli, Veneto, Italy 2017&nbsp;&nbsp;<span class="price">9/34</span></li>
+					<li><span class="name">Pecorino</span> Pehhcora, Abruzzo, Italy 2016&nbsp;&nbsp;<span class="price">11/42</span></li>
+					<li><span class="name">Soave</span> Inama, Veneto, Italy 2017&nbsp;&nbsp;<span class="price">12/46</span></li>
+					<li><span class="name">Sauvignon Blanc</span> Jules Taylor, Marlborough, New Zealand 2018&nbsp;&nbsp;<span class="price">12/46</span></li>
+					<li><span class="name">Sancerre</span> (Sauvignon Blanc) Jean-Marc & Mathieu Crochet, Loire Valley, France 2018&nbsp;&nbsp;<span class="price">14/54</span></li>
+					<li><span class="name">Bordeaux Blanc</span> (Sémillon, Sauvignon Blanc) Château Pilet, France 2017&nbsp;&nbsp;<span class="price">10/38</span></li>
+					<li><span class="name">Chardonnay</span> Les Trois Pêcheurs Saint-Véran, Burgundy, France 2016&nbsp;&nbsp;<span class="price">12/46</span></li>
+					<li><span class="name">Chardonnay</span> Frank Family, Napa Valley, California 2017&nbsp;&nbsp;<span class="price">15/58</span></li>
+					<li><span class="name">Albariño</span> Finca de Arantei, Galicia, Spain 2017&nbsp;&nbsp;<span class="price">48</span></li>
+					<li><span class="name">Nero d’Avola</span> “Bianco de Morgante” Sicily, Italy 2017&nbsp;&nbsp;<span class="price">52</span></li>
+					<li><span class="name">Chardonnay</span> Calera, Mt Harlan, California 2016&nbsp;&nbsp;<span class="price">68</span></li>
+					<h2>Red</h2>
+					<li><span class="name">Pinot Noir</span> Illahe, Willamette Valley, Oregon 2017&nbsp;&nbsp;<span class="price">14/54</span></li>
+					<li><span class="name">Barbera</span> Carlo Revello & Figli, Piedmont, Italy 2016&nbsp;&nbsp;<span class="price">12/46</span></li>
+					<li><span class="name">Supertuscan</span> Tua Rita “Rosso dei Notri” Organic, Tuscany, Italy 2017&nbsp;&nbsp;<span class="price">14/54</span></li>
+					<li><span class="name">BDX</span> (Merlot, Cab Sauv) Pull, Paso Robles, California 2016&nbsp;&nbsp;<span class="price">11/42</span></li>
+					<li><span class="name">Saint-Émilion Grand Cru</span> (Merlot, Cab Sauv) Guilhemanson, Bordeaux, France 2013&nbsp;&nbsp;<span class="price">14/54</span></li>
+					<li><span class="name">Cabernet</span> Villa San Juliette, Paso Robles, California 2016&nbsp;&nbsp;<span class="price">12/46</span></li>
+					<li><span class="name">Meritage</span> Trefethen “Double T” Oak Knoll, Napa Valley, California 2016&nbsp;&nbsp;<span class="price">13/50</span></li>
+					<li><span class="name">Petit Verdot</span> (Syrah) Marqués de Griñón “Caliza” Castilla–La Mancha, Spain 2013&nbsp;&nbsp;<span class="price">14/54</span></li>
+					<li><span class="name">Nebbiolo</span> Giuseppe Cortese, Piedmont, Italy 2016&nbsp;&nbsp;<span class="price">52</span></li>
+					<li><span class="name">Barolo</span> Cantine Povero, Piedmont, Italy 2014&nbsp;&nbsp;<span class="price">56</span></li>
+					<li><span class="name">Pomerol</span> (Merlot, Cab Franc) Rocher-Bonregard, Bordeaux, France 2014&nbsp;&nbsp;<span class="price">58</span></li>
+					<li><span class="name">Margaux</span> (Cab Sauv, Merlot) “Bouquet de Monbrison” Bordeaux, France 2015&nbsp;&nbsp;<span class="price">66</span></li>
+					<li><span class="name">Vacqueyras</span> (Grenache, Syrah) Charbonnière Organic, Rhône Valley, France 2016&nbsp;&nbsp;<span class="price">56</span></li>
+					<li><span class="name">Zinfandel</span> Paydirt “Going for Broke” Paso Robles, California 2017&nbsp;&nbsp;<span class="price">48</span></li>
+					<li><span class="name">Cabernet</span> Schug, Sonoma Valley, California 2015&nbsp;&nbsp;<span class="price">68</span></li>
+					<li><span class="name">Cabernet</span> Trefethen, Oak Knoll, Napa Valley, California 2016&nbsp;&nbsp;<span class="price">74</span></li>
+				</ul>
+			</div>
+			<div class="clip"><img data-src="img/clip4.png" /></div>
+		</section>
+		<section id="info">
+			<div class="info">
+				<address>
+					<p><span class="name">The Grand Tavern</span><br>
+					1105 6th Avenue<br>
+					Neptune, NJ&nbsp; 07753</p>
+					<p class="directions"><a class="map" href="https://goo.gl/maps/SEa8XCWzo9T2">Directions</a></p>
+				</address>
+				<div class="hours">
+					<h1>
+						Open Daily<br>
+						5&ndash;10pm
+				</h1>
+				</div>
+				<div class="contact">
+					<p>We also serve brunch on Mother’s&nbsp;Day and New&nbsp;Year’s&nbsp;Day.</p>
+					<p>We accept reservations on Valentine’s&nbsp;Day, Mother’s&nbsp;Day and New&nbsp;Year’s&nbsp;Eve.</p>
+					<p>For all other days, you can call up to a week in advance to be added to the waitlist.</p>
+					<p>We are closed each year for Easter, Thanksgiving, Christmas&nbsp;Eve and Christmas&nbsp;Day.</p>
+					<p><a href="tel:+17327740120">(732) 774-0120</a></p>
+					<p><a href="mailto:info@thegrandtavern.com">info@thegrandtavern.com</a></p>
+				</div>
+				<div class="social-media">
+					<ul>
+						<li><a href="https://www.facebook.com/thegrandtavern1105/?fref=ts"><img src="img/facebook.png" alt="facebook"/></a></li>
+						<li><a href="https://www.instagram.com/thegrandtavern/"><img src="img/instagram.png" alt="instagram"/></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clip"><img data-src="img/clip5.png" /></div>
+		</section>
+
+		<div class="top"><a href="#">&uarr;</a></div>
+
+		<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+							}, 500);
+						return false;
+						}
+					}
+				});
+			});
+		</script>
+
+		<script>
+		[].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+			img.setAttribute('src', img.getAttribute('data-src'));
+			img.onload = function() {
+				img.removeAttribute('data-src');
+				};
+			});
+		</script>
+
+	</body>
+</html>

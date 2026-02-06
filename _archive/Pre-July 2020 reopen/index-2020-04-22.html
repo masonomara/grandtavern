@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Grand Tavern</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<meta name="google-site-verification" content="UVDZLtiUXzq72ZhNI5Cd4Ceb_wDBz-gPeyw86mLFZJs">
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style-takeout.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+		jQuery(document).ready(function() {
+			var duration = 1000;
+			jQuery(window).scroll(function() {
+				if (jQuery(this).scrollTop()) {
+					jQuery('.top').fadeIn(duration);
+				} else {
+					jQuery('.top').fadeOut(duration);
+				}
+			});
+
+			jQuery('.top').click(function(event) {
+				event.preventDefault();
+				jQuery('html, body').animate({
+					scrollTop: 0
+				}, duration);
+				return false;
+			})
+		});
+		</script>
+	</head>
+	<body id="home">
+		<header>
+			<ul class="nav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#info">Info</a></li>
+			</ul>
+		</header>
+		<section id="menu">
+			<div class="logo"><a href="http://thegrandtavern.com"><img src="img/logo.png"></a></div>
+			<div class="hours">
+				<h1>
+					Open for Takeout<br>
+					4 &ndash; 8pm Daily
+				</h1>
+				<h1><a href="tel:+17327740120">(732) 774-0120</a></h1>
+			</div>
+			<div class="menu">
+				<h1>Food</h1>
+				<ul>
+					<li><span class="name">spicy fried chicken sandwich</span>, alabama&nbsp;white&nbsp;bbq&nbsp;sauce, pickles, fries&nbsp;&nbsp;<span class="price">16</span></li>
+					<li><span class="name">double burger</span>, two&nbsp;4&nbsp;oz&nbsp;patties, american&nbsp;cheese, bacon, red&nbsp;onion, pickles, dijonnaise, fries&nbsp;&nbsp;<span class="price">16</span></li>
+					<li><span class="name">fried portobello mushroom sandwich</span>, ricotta, basil&nbsp;pesto, fries&nbsp;&nbsp;<span class="price">14</span></li>
+				</ul>
+				<h1>Drinks</h1>
+				<ul>
+					<li>craft beer & cider&nbsp;<em>(16&nbsp;oz)</em>&nbsp;&nbsp;<span class="price">5</span></li>
+					<li>wine bottles&nbsp;&nbsp;<span class="price">25</span></li>
+					<li><em>call or <a href="https://www.instagram.com/thegrandtavern/">see instagram</a> for daily beer & wine offerings</li>
+				</ul>
+			</div>
+			<div class="clip"><img data-src="img/clip1.png"></div>
+		</section>
+		<section id="info">
+			<div class="info">
+				<address>
+					<p><span class="name">The Grand Tavern</span><br>
+					1105 6th Avenue<br>
+					Neptune, NJ&nbsp; 07753</p>
+					<p class="directions"><a class="map" href="https://goo.gl/maps/SEa8XCWzo9T2">Directions</a></p>
+				</address>
+				<div class="contact">
+					<p><a href="mailto:info@thegrandtavern.com">info@thegrandtavern.com</a></p>
+				</div>
+				<div class="social-media">
+					<ul>
+						<li><a href="https://www.facebook.com/thegrandtavern1105/"><img src="img/facebook.png" alt="facebook"/></a></li>
+						<li><a href="https://www.instagram.com/thegrandtavern/"><img src="img/instagram.png" alt="instagram"/></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clip"><img data-src="img/clip5.png"></div>
+		</section>
+
+		<div class="top"><a href="#">&uarr;</a></div>
+
+		<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+							}, 500);
+						return false;
+						}
+					}
+				});
+			});
+		</script>
+
+		<script>
+		[].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+			img.setAttribute('src', img.getAttribute('data-src'));
+			img.onload = function() {
+				img.removeAttribute('data-src');
+				};
+			});
+		</script>
+
+	</body>
+</html>

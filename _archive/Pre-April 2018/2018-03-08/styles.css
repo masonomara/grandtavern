@@ -1,0 +1,468 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("img/grand_wall.jpg");
+  background-repeat: repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  color: #292929;
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+
+img {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+img[data-src] {
+	opacity: 0;
+}
+
+
+.top {
+  width:  50px;
+  z-index: 5000;
+  bottom: 10px;
+  right: 10px;
+  position: fixed;
+  border: 1px solid #292929;
+  display: block;
+  color: #000;
+  text-align:center;
+  padding: 10px 0 10px 0;
+
+}
+
+.top a {
+  text-decoration: none;
+  padding: 20px 0 0 0;
+}
+
+
+a {
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-decoration: none;
+  color: #292929;
+}
+
+a:hover {
+  text-decoration: none;
+  color: green;
+}
+
+.logo {
+  width: 100%;
+  text-align: center;
+  mix-blend-mode: multiply;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.logo img {
+  mix-blend-mode: multiply;
+  width: 300px;
+}
+
+.nav {
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8pt;
+  width: 100%;
+  margin: 0 auto 0;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  position: fixed;
+  z-index: 2000;
+  background-color: #292929;
+}
+
+.nav li {
+  list-style: none;
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+
+.nav li a {
+  color: #fbf3e8;
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.nav li a:hover {
+  color: green;
+}
+
+.gt-hrs {
+  margin: 40px auto 0;
+  border: 1px solid #292929;
+  padding: 20px;
+  width: 250px;
+}
+
+.gt-sm-box {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.gt-sm {
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+ul.gt-sm li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+
+.gt-sm img {
+  width: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+strong {
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+section {
+  width: 100%;
+  border-top: 8px solid #292929;
+  padding-bottom: 0px;
+  opacity: 1;
+}
+
+.gt-clip {
+  padding: 0 40px 0 40px;
+  margin: 20px 0 0 0;
+  text-align: center;    
+}
+
+.gt-clip img {
+  padding: 0;
+  margin: 0 0 -5px 0;
+  max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20pt;
+  text-transform: uppercase;
+  padding-top: 0;
+  margin: 0 0 14px 0;
+}
+
+
+h2 {
+  text-align: center;
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20pt;
+  padding-top: 0;
+  margin: 0;
+}
+
+ul.gt-item li.gt-name {
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  list-style: none;
+  text-align: center;
+  font-size: 10pt;
+  line-height: 13pt;
+  margin: 0;
+  padding:10px 0 0 0;
+}
+
+ul.gt-item {
+  padding:0 0 30px 0;
+}
+
+.gt-item {
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  list-style: none;
+  text-align: center;
+  font-size: 10pt;
+  line-height: 13pt;
+  margin:0;
+  padding:0;
+}
+
+.gt-job {
+  padding: 30px;
+}
+
+.gt-loc {
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  list-style: none;
+  text-align: center;
+  font-size: 11pt;
+  line-height: 16pt;
+  margin:0;
+  padding: 15px 0 0 0;
+}
+
+.gt {
+  padding: 30px 40px 20px 40px;
+}
+
+h4 {
+  text-align: center;
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9pt;
+  text-transform: uppercase;
+  padding: 0;
+  letter-spacing: 1px;
+  margin: 12px 0 0 0;
+}
+
+ul.gt-la {
+  list-style: none;
+  text-align: center;
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20pt;
+  padding: 24px 0 0 0;
+  margin: 0;
+}
+
+.gt h1 {
+  margin: 0;
+}
+
+a:hover img {
+  opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width:420px) {
+
+.nav {
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8pt;
+  width: 100%;
+  margin: -10px auto 0;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  position: fixed;
+  z-index: 2000;
+  background-color: #292929;
+}
+
+.nav li {
+  list-style: none;
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+
+.nav li a {
+  color: #fbf3e8;
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.nav li a:hover {
+  color: green;
+}
+
+.gt {
+  padding-top: 70px;
+}
+
+ul.gt-item {
+  padding:0 0 30px 0;
+}
+
+ul.gt-item li.gt-name {
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  list-style: none;
+  text-align: center;
+  font-size: 11pt;
+  line-height: 14pt;
+  margin: 0;
+  padding:10px 0 0 0;
+}
+
+.gt-item {
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  list-style: none;
+  text-align: center;
+  font-size: 11pt;
+  line-height: 16pt;
+  margin:0;
+  padding:0;
+}
+
+.gt-job {
+  padding: 30px;
+}
+
+.gt-loc {
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  list-style: none;
+  text-align: center;
+  font-size: 11pt;
+  line-height: 16pt;
+  margin:0;
+  padding: 15px 0 0 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20pt;
+  text-transform: uppercase;
+  padding-top: 0;
+  margin: 0 0 15px 0;
+}
+
+.gt h1 {
+  margin: 0 0 5px 0;
+}
+
+#jobs .gt h1 {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20pt;
+  padding-top: 0;
+  margin: 0;
+}
+
+ul.gt-la {
+  list-style: none;
+  text-align: center;
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20pt;
+  padding: 24px 0 0 0;
+  margin: 0;
+}
+
+h4 {
+  text-align: center;
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9pt;
+  text-transform: uppercase;
+  padding: 0;
+  letter-spacing: 1px;
+  margin: 12px 0 0 0;
+}
+
+.nav {
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8pt;
+  width: 100%;
+  margin: -10px auto 0;
+  padding: 30px 0 30px 0;
+  text-align: center;
+  position: fixed;
+  z-index: 2000;
+  background-color: #292929;
+}
+
+.nav li {
+  list-style: none;
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+
+.nav li a {
+  color: #fbf3e8;
+  font-family: "gotham Rounded SSm A", "gotham Rounded SSm B", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.gt-hrs {
+  margin: 40px auto 0;
+  border: 1px solid #292929;
+  padding: 20px;
+  width: 250px;
+}
+
+.gt-sm-box {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.gt-sm {
+  padding: 20px 0 0 0;
+  margin: 0;
+}
+
+ul.gt-sm li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+
+.gt-sm img {
+  width: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+a:hover img {
+  opacity: 0.7;
+}
+
+}
+
+@media only screen and (min-width:700px) {}
